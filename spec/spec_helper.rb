@@ -14,7 +14,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
 
-  def capture_stdout(&block)
+def capture_stdout(&block)
   original_stdout = $stdout
   $stdout = fake = StringIO.new
   begin
